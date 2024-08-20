@@ -1,0 +1,428 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: transparent;
+  height: auto;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+main {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  max-width: 1920px;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: darkred;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: black;
+}
+
+/* Navigation Bar */
+.navbar {
+  height: 100px;
+  max-width: 1920px;
+  width: 80%;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: large;
+  overflow: hidden;
+}
+
+.navbar > .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar > .items {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.items > a {
+  transform: translateY(1);
+  transition: 500ms all ease-in-out;
+}
+
+.items > a:hover {
+  transform: translateY(0.8);
+}
+
+#contactus {
+  border: 1px solid darkred;
+  border-radius: 5px;
+  color: darkred;
+  padding: 15px;
+  transition: 300ms all ease-in-out;
+}
+
+#contactus:hover {
+  background-color: darkred;
+  color: white;
+}
+
+/* Main */
+.main-container {
+  display: flex;
+  align-items: center;
+  margin: 0px 15px 15px 0px;
+  padding: 25px;
+}
+
+.main-container img {
+  width: 500px;
+  height: auto;
+  transition: 500ms all ease-in-out;
+}
+
+.main-container > .left-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 25px;
+}
+
+.main-container > .left-container > h1 {
+  font-weight: bold;
+}
+
+.main-container > .left-container > p {
+  text-align: justify;
+}
+
+.main-container > .right-container {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.main-container > .left-container > .reservation-button {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.reservation-button > .reservation {
+  background-color: darkred;
+  padding: 25px;
+  border-radius: 5px;
+  color: white;
+  transition: 500ms all ease-in-out;
+}
+
+.reservation-button > .reservation:hover {
+  background-color: rgb(184, 3, 3);
+}
+
+.reservation-button > .reservation-video {
+  border: 1px solid darkred;
+  color: darkred;
+  border-radius: 5px;
+  padding: 25px;
+  transition: 500ms all ease-in-out;
+}
+
+.reservation-button > .reservation-video:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.reservation-button > .reservation-video:hover .reservation {
+  background-color: transparent;
+  border: 1px solid darkred;
+  color: white;
+}
+
+/* About */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 15px 15px 0px;
+  padding: 25px;
+}
+
+.about-container > .left-content > .cube {
+  display: flex;
+  justify-content: center;
+  background-color: darkred;
+  border-radius: 25px;
+  width: 350px;
+  height: 500px;
+  color: darkred;
+  position: relative;
+}
+
+.about-container > .left-content > .cube > img {
+  width: 400px;
+  height: auto;
+  top: 120px;
+  left: 50px;
+  position: absolute;
+}
+
+.about-container > .right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 50%;
+}
+
+.about-container > .right-content > p {
+  text-align: justify;
+}
+
+/* Menu */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 15px 15px 0px;
+  padding: 25px;
+}
+
+.menu-container > .left-menu-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 25px;
+}
+
+.menu-container > .left-menu-content > .list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: justify;
+}
+
+.menu-container > .right-menu-content {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  height: auto;
+}
+
+.menu-container > .right-menu-content > .r-img-content {
+  display: flex;
+  justify-content: center;
+  background-color: darkred;
+  border-radius: 25px;
+  position: relative;
+  width: 350px;
+  height: 500px;
+}
+
+.menu-container > .right-menu-content > .r-img-content > img {
+  width: 450px;
+  height: auto;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+
+/* Discover */
+.discover-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+.discover-container > .discover-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+.discover-container > .discover-menu {
+  display: flex;
+}
+
+.discover-container > .discover-menu > .l-nav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  width: 25%;
+}
+
+.discover-container > .discover-menu > .l-nav-content > a {
+  font-size: 20px;
+  color: black;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  transition: 500ms all ease-in-out;
+}
+
+.discover-container > .discover-menu > .l-nav-content > a:hover {
+  font-size: 20px;
+  color: white;
+  background-color: darkred;
+  transition: 500ms all ease-in-out;
+}
+
+.discover-container > .discover-menu > .l-nav-content > a:active {
+  font-size: 20px;
+  color: white;
+  background-color: darkred;
+  transition: 500ms all ease-in-out;
+}
+
+.discover-container > .discover-menu > .r-menu-content {
+  width: 100%;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover-container > .discover-menu > .r-menu-content > .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 25px;
+}
+
+.discover-container > .discover-menu > .r-menu-content > .more-menu a {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid darkred;
+  border-radius: 5px;
+  color: darkred;
+  transition: 500ms all ease-in-out;
+}
+
+.discover-container > .discover-menu > .r-menu-content > .more-menu a:hover {
+  background-color: darkred;
+  padding: 25px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+}
+
+/* CTA */
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  max-width: 1920px;
+  margin: auto;
+  gap: 25px;
+  padding: 50px;
+}
+
+.cta-container a {
+  background-color: white;
+  color: darkred;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+/* Product Item */
+.product-item {
+  display: flex;
+  flex-grow: 1;
+  text-align: justify;
+  flex-direction: column;
+  gap: 5px;
+  margin: 15px 0;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 450px;
+  height: 700px;
+  transform: scale(1);
+  transition: 500ms all ease-in-out;
+  box-shadow: 0 0px 2.5px rgb(0, 0, 1 );
+}
+
+.product-item:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(0.9);
+  border-color: transparent;
+  background-color: darkred;
+}
+
+.product-item > .description {
+  overflow: auto;
+}
+
+.product-item > img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.product-item > .description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 25px;
+}
+
+/* Responsiveness */
+/* Desktop - 1920px */
+@media screen and (max-width: 1920px) {
+  main {
+    width: 80%;
+  }
+}
+
+/* Laptop - 1280px */
+@media screen and (max-width: 1280px) {
+  main {
+    width: 95%;
+    overflow: hidden;
+  }
+}
+
+/* Tablet - 768px */
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+}
+
+/* Mobile - 480px */
+@media screen and (max-width: 480px) {
+  main {
+  }
+}
