@@ -358,7 +358,6 @@ a {
 .product-item {
   display: flex;
   flex-grow: 1;
-  text-align: justify;
   flex-direction: column;
   gap: 5px;
   margin: 15px 0;
@@ -388,7 +387,6 @@ a {
 .product-item > .description {
   display: flex;
   flex-direction: column;
-  text-align: justify;
   gap: 5px;
   padding: 25px;
   overflow: auto;
@@ -399,6 +397,7 @@ a {
 }
 .product-item > .description > p {
   font-size: 16px;
+  text-align: justify;
 }
 .product-item > .description > label {
   font-size: 12px;
