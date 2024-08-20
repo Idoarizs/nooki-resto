@@ -9,9 +9,10 @@ export default function Discover() {
       <div className="discover-intro">
         <h1>Discover Our Menu</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-          incidunt! Illo delectus consequuntur dolor enim error magnam nisi in
-          nemo.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          voluptatum autem cupiditate expedita distinctio ducimus impedit a
+          odit, aspernatur rerum repudiandae tempora atque? Adipisci cumque modi
+          quae laboriosam eos deleniti deserunt nisi officia maxime accusamus.
         </p>
       </div>
 

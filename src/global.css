@@ -34,20 +34,21 @@ footer {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 48px;
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 a {
+  font-size: 10px;
   color: black;
 }
 
 /* Navigation Bar */
 .navbar {
-  height: 100px;
+  height: 50px;
   max-width: 1920px;
   width: 80%;
   display: flex;
@@ -63,6 +64,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbar img {
+  width: 85px;
+  height: auto;
 }
 
 .navbar > .items {
@@ -84,13 +90,14 @@ a {
   border: 1px solid darkred;
   border-radius: 5px;
   color: darkred;
-  padding: 15px;
+  padding: 10px;
   transition: 300ms all ease-in-out;
 }
 
 #contactus:hover {
   background-color: darkred;
   color: white;
+  cursor: pointer;
 }
 
 /* Main */
@@ -102,7 +109,7 @@ a {
 }
 
 .main-container img {
-  width: 500px;
+  width: 350px;
   height: auto;
   transition: 500ms all ease-in-out;
 }
@@ -137,7 +144,7 @@ a {
 
 .reservation-button > .reservation {
   background-color: darkred;
-  padding: 25px;
+  padding: 15px;
   border-radius: 5px;
   color: white;
   transition: 500ms all ease-in-out;
@@ -151,7 +158,7 @@ a {
   border: 1px solid darkred;
   color: darkred;
   border-radius: 5px;
-  padding: 25px;
+  padding: 15px;
   transition: 500ms all ease-in-out;
 }
 
@@ -187,9 +194,9 @@ a {
 }
 
 .about-container > .left-content > .cube > img {
-  width: 400px;
+  width: 350px;
   height: auto;
-  top: 120px;
+  top: 10rem;
   left: 50px;
   position: absolute;
 }
@@ -246,18 +253,18 @@ a {
 }
 
 .menu-container > .right-menu-content > .r-img-content > img {
-  width: 450px;
+  width: 350px;
   height: auto;
   position: absolute;
-  top: 25px;
-  left: 0px;
+  top: 5rem;
+  right: 2.5rem;
 }
 
 /* Discover */
 .discover-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
   width: 100%;
 }
 
@@ -270,36 +277,27 @@ a {
 
 .discover-container > .discover-menu {
   display: flex;
+  flex-direction: column;
 }
 
 .discover-container > .discover-menu > .l-nav-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 35px;
-  width: 25%;
 }
 
 .discover-container > .discover-menu > .l-nav-content > a {
-  font-size: 20px;
+  font-size: 12px;
   color: black;
   padding: 25px;
-  background-color: white;
   border-radius: 15px;
   transition: 500ms all ease-in-out;
 }
 
 .discover-container > .discover-menu > .l-nav-content > a:hover {
   font-size: 20px;
-  color: white;
-  background-color: darkred;
-  transition: 500ms all ease-in-out;
-}
-
-.discover-container > .discover-menu > .l-nav-content > a:active {
-  font-size: 20px;
-  color: white;
-  background-color: darkred;
   transition: 500ms all ease-in-out;
 }
 
@@ -352,11 +350,11 @@ a {
 .cta-container a {
   background-color: white;
   color: darkred;
-  padding: 25px;
+  padding: 15px;
   border-radius: 5px;
 }
 
-/* Product Item */
+/* ProductCard */
 .product-item {
   display: flex;
   flex-grow: 1;
@@ -366,11 +364,11 @@ a {
   margin: 15px 0;
   background-color: transparent;
   border-radius: 10px;
-  width: 450px;
-  height: 700px;
+  width: 250px;
+  height: 500px;
   transform: scale(1);
   transition: 500ms all ease-in-out;
-  box-shadow: 0 0px 2.5px rgb(0, 0, 1 );
+  box-shadow: 0 0px 2.5px rgb(0, 0, 1);
 }
 
 .product-item:hover {
@@ -381,48 +379,29 @@ a {
   background-color: darkred;
 }
 
-.product-item > .description {
-  overflow: auto;
-}
-
 .product-item > img {
   width: 100%;
-  height: 320px;
+  height: 200px;
   object-fit: cover;
 }
 
 .product-item > .description {
   display: flex;
   flex-direction: column;
+  text-align: justify;
   gap: 5px;
   padding: 25px;
+  overflow: auto;
+}
+
+.product-item > .description > h1 {
+  font-size: 42px;
+}
+.product-item > .description > p {
+  font-size: 16px;
+}
+.product-item > .description > label {
+  font-size: 12px;
 }
 
 /* Responsiveness */
-/* Desktop - 1920px */
-@media screen and (max-width: 1920px) {
-  main {
-    width: 80%;
-  }
-}
-
-/* Laptop - 1280px */
-@media screen and (max-width: 1280px) {
-  main {
-    width: 95%;
-    overflow: hidden;
-  }
-}
-
-/* Tablet - 768px */
-@media screen and (max-width: 768px) {
-  main {
-    width: 100%;
-  }
-}
-
-/* Mobile - 480px */
-@media screen and (max-width: 480px) {
-  main {
-  }
-}
