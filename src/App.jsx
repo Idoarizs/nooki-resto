@@ -5,7 +5,7 @@ import Discover from "./pages/Discover";
 import Main from "./pages/Main";
 import Menu from "./pages/Menu";
 
-function App() {
+function App() {  
   return (
     <>
       <header>

@@ -18,12 +18,12 @@ export default function Discover() {
 
       <div className="discover-menu">
         <div className="l-nav-content">
-          <a href="#">All</a>
-          <a href="#">Sushi Nooki</a>
-          <a href="#">Ramen Nooki</a>
-          <a href="#">Udon Nooki</a>
-          <a href="#">Danggo Nooki</a>
-          <a href="#">Others Menu</a>
+          <a>All</a>
+          <a>Sushi Nooki</a>
+          <a>Ramen Nooki</a>
+          <a>Udon Nooki</a>
+          <a>Danggo Nooki</a>
+          <a>Others Menu</a>
         </div>
         <div className="r-menu-content">
           <div className="product-list">
