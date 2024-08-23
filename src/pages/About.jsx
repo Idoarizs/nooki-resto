@@ -1,4 +1,4 @@
-import images from "../assets/index"
+import images from "../assets/index";
 
 export default function About() {
   return (
@@ -12,12 +12,12 @@ export default function About() {
       <div className="right-content">
         <h1>Delicious Japanese Cuisine And Sushi</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit a,
-          aliquam non similique ipsa et temporibus! Sequi eius officiis facilis
-          asperiores, eveniet reiciendis expedita veritatis veniam vel! Neque
-          repudiandae, ea rem nisi delectus veritatis quia, harum quaerat vero
-          expedita minus quae commodi, nemo excepturi. Quaerat blanditiis ipsum
-          ratione. Repellat, earum!
+          At our restaurant, we prioritize quality and customer satisfaction,
+          offering a wide selection of sushi that delights the senses. From
+          nigiri to sashimi, every dish is crafted with meticulous attention to
+          detail and taste, using traditional recipes passed down through
+          generations. Join us to savor special moments with your family and
+          friends at Dishi Japanese Cuisine.
         </p>
       </div>
     </div>

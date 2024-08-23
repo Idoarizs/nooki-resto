@@ -1,4 +1,4 @@
-import images from "../assets/index"
+import images from "../assets/index";
 
 export default function Main() {
   return (
@@ -6,14 +6,18 @@ export default function Main() {
       <div className="left-container">
         <h1>Dishi Japanese Cuisine And Sushi at Its Finest</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta,
-          corrupti dignissimos. Sapiente dicta minima quaerat blanditiis
-          dolores, repudiandae nisi omnis, aliquam, est eos praesentium
-          architecto dolorum non explicabo veniam quia.
+          Experience the finest sushi with authentic Japanese flavors at Dishi
+          Japanese Cuisine. We serve dishes made with the freshest,
+          highest-quality ingredients, offering a dining experience that is
+          truly unforgettable.
         </p>
         <div className="reservation-button">
-          <a className="reservation" href="/">Reservation</a>
-          <a className="reservation-video" href="/">How to Reservation</a>
+          <a className="reservation">
+            Reservation
+          </a>
+          <a className="reservation-video">
+            How to Reservation
+          </a>
         </div>
       </div>
       <div className="right-container">

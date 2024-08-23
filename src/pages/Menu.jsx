@@ -12,23 +12,24 @@ export default function Menu() {
         <div className="list-items">
           <div className="first-item">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde,
-              cumque repudiandae quos mollitia architecto itaque minima suscipit
-              cupiditate harum molestiae!
+              Our Sushi Salmon Special is a delicate combination of the finest
+              sushi-grade salmon laid over perfectly seasoned rice. This dish is
+              a testament to the art of sushi making, offering a
+              melt-in-your-mouth experience with each bite
             </p>
           </div>
           <div className="second-item">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              expedita distinctio, possimus nesciunt praesentium maxime ut
-              aliquid cum sit alias.
+              Freshly sliced salmon, premium sushi rice, a touch of wasabi, and
+              nori (seaweed). Each element is carefully selected to ensure the
+              highest quality and authentic taste.
             </p>
           </div>
           <div className="third-item">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem
-              consequuntur consectetur repellat sunt totam id quis ipsum
-              doloremque illo.
+              This dish is known for its rich, buttery taste of salmon, balanced
+              by the subtle sweetness of the rice. The wasabi adds a slight
+              kick, while the nori provides a savory finish.
             </p>
           </div>
         </div>
