@@ -1,7 +1,10 @@
+import { useState } from "react";
 import images from "../assets/index";
 import ProductCard from "../components/ProductCard";
 
 export default function Discover() {
+  const [menu, setMenu] = useState("");
+
   return (
     <div id="foods" className="discover-container">
       <div className="discover-intro">
@@ -16,24 +19,27 @@ export default function Discover() {
       </div>
       <div className="discover-menu">
         <div className="l-nav-content">
-          <a>All</a>
-          <a>Sushi Nooki</a>
-          <a>Ramen Nooki</a>
-          <a>Udon Nooki</a>
-          <a>Danggo Nooki</a>
-          <a>Others Menu</a>
+          <a onClick={() => setMenu("")}>All</a>
+          <a onClick={() => setMenu("Sushi")}>Sushi Nooki</a>
+          <a onClick={() => setMenu("Ramen")}>Ramen Nooki</a>
+          <a onClick={() => setMenu("Udon")}>Udon Nooki</a>
+          <a onClick={() => setMenu("Danggo")}>Danggo Nooki</a>
         </div>
 
         <div className="r-menu-content">
           <div className="product-list">
-            {images.menu.map((item) => (
-              <ProductCard
-                img={item.img}
-                title={item.title}
-                price={item.price}
-                description={item.description}
-              />
-            ))}
+            {images.menu
+              .filter((item) => {
+                return menu === "" ? item : item.title.includes(menu);
+              })
+              .map((item) => (
+                <ProductCard
+                  img={item.img}
+                  title={item.title}
+                  price={item.price}
+                  description={item.description}
+                />
+              ))}
           </div>
           <div className="more-menu">
             <a>See More Menu</a>
